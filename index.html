@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Covidualize </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "globe.webp">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
+    
+  </head>
+
+
+  <body>
+
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <h4 class="text-secondary">   
+                     Covid 19
+                    <a href="https://github.com/SidNath21/Covid19" target="_blank" > <i class="fab fa-github git"></i> </a>
+                </h4>
+            </a>
+
+
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#home-page"> <i class="fas fa-align-left about"> </i> Home </a>
+            </li>
+
+           
+
+          
+            <li>
+                <a href="#three-page"> <i class="fas fa-globe visual"></i> </i> Data </a>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+
+
+    <div id="home-page">
+
+
+      <h1 class="title"> 
+          <span class="covid">Covid</span>ualize </h1>
+      <h2 class="info"> Covid 19 Visualiation Tool for Geom Hacks 2020 </h2>
+
+      <div class="border"> </div>
+
+      <div class="container">
+
+         <h2 class="topic"> Global </h2>
+         
+
+         <div class="data-container">
+
+              <div class="data"> 
+                  <h2> Total Cases  <i class="fas fa-ambulance"></i> </h2>
+                  <br>
+                  <h3 class="total-cases"></h3>
+                  <br>
+                  <h2> Total Deaths <i class="fas fa-book-dead"></i></h2>
+                  <br>
+                  <h3 class="total-deaths"></h3>
+                  <br>
+                  <h2> Total Recovered <i class="fas fa-heartbeat"></i> </h2>
+                  <br>
+                  <h3 class="total-recovered"> </h3>
+                  <br>
+              </div>
+
+              <div class="country">
+
+                  <form id="form" onsubmit="return false" autocomplete="off">
+
+                      <h2> Enter 
+                          <span class="text-change"> Country </span> 
+                      </h2>
+                      <h5> "Global" For Global Data </h5>
+          
+                      <input type="text" name="title" placeholder="Country"> <br>
+          
+                      
+                      <button id = "submit"> Get Data </button> <br>
+                     
+          
+                  </form>
+
+              </div>
+
+              <div class="data"> 
+                  <h2> Daily Cases  <i class="fas fa-ambulance"></i> </h2>
+                  <br>
+                  <h3 class="daily-cases"></h3>
+                  <br>
+                  <h2> Daily Deaths <i class="fas fa-book-dead"></i></h2>
+                  <br>
+                  <h3 class="daily-deaths"></h3>
+                  <br>
+                  <h2> Daily Recovered  <i class="fas fa-heartbeat"></i> </h2>
+                  <br>
+                  <h3 class="daily-recovered"> </h3>
+                  <br>
+              </div>
+
+             
+          </div>
+          
+
+      </div>
+      
+      
+
+      <h2 class="footer"> Created By Sid Nath & Ritvik Pandey | Data From <a href=""> Covid 19 API </a></h2>
+
+     
+      <a href="#three-page">
+          <button class="learn-btn"> Find Out More
+              <i class="fas fa-angle-down down"></i>
+          </button>
+      </a>
+
+
+  </div>
+
+  <div id="three-page">
+
+    <div class="index">
+
+        <div class="section">
+            <div class="rbox"> </div>
+            <h2> Scaled Number of Deaths  </h2>
+        </div>
+
+        <div class="section">
+            <div class="gbox"> </div>
+            <h2> Scaled Number of Recoveries </h2>
+        </div>
+
+    </div>
+
+    
+  </div>
+
+
+    
+      <script src="js/script.js"> </script>
+      <script src="js/three.js"></script>
+      <script src="js/OrbitControls.js"></script>
+      <script src="js/earth.js"></script>
+
+     
+
+
+  </body>
+</html>
