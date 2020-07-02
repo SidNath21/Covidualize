@@ -173,6 +173,28 @@ function block() {
 
         });
 
+        domEvents.addEventListener(cubeA, "touchstart", function () {
+
+          console.log(countryName, "Num Deaths", numDeaths[i]);
+          cName.textContent = countryName;
+          cData.textContent = `Total Deaths: ${numDeaths[i]}`;
+          cDiv.style.borderColor = "#C21807";
+          cName.style.borderColor = "#C21807";
+          cData.style.borderColor = "#C21807";
+
+        });
+
+        domEvents.addEventListener(cubeB, "touchstart", function(){
+
+          console.log(countryName, "Num Recoveries", numRecovered[i]);
+          cName.textContent = countryName;
+          cData.textContent = `Total Recoveries: ${numRecovered[i]}`;
+          cDiv.style.borderColor = "green";
+          cName.style.borderColor = "green";
+          cData.style.borderColor = "green";
+
+        });
+
 
 
 

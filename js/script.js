@@ -26,6 +26,17 @@ generateData.addEventListener("click", function(){
   }
 });
 
+generateData.addEventListener("touchstart", function(){
+  country = textForm.elements["title"].value;
+  if(country.toLowerCase() == "global"){
+    updateTitle("Global");
+    updateNums(globalTotalCases, globalTotalDeaths, globalTotalRecovered, dailyGlobalCases, dailyGlobalDeaths, dailyGlobalRecovered);
+  }
+  else{
+    getCountryData(country);
+  }
+});
+
 
 function getCountryData(country){
 
