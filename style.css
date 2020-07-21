@@ -315,6 +315,7 @@ h2.footer{
 .index{
     width: 100%;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .section{

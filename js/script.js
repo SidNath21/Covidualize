@@ -15,6 +15,11 @@ let dailyRecovered = document.querySelector(".daily-recovered");
 let generateData = document.querySelector("#submit");
 let textForm = document.querySelector("#form");
 
+let cname = document.querySelector(".countryName");
+let cdata = document.querySelector(".countryData");
+
+
+
 generateData.addEventListener("click", function(){
   country = textForm.elements["title"].value;
   if(country.toLowerCase() == "global"){
@@ -107,7 +112,8 @@ function getData(){
 
     covidData = data["Countries"];
 
-    
+    cname.textContent = "Global Cases"
+    cdata.textContent = globalTotalCases
     updateTitle("Global");
     updateNums(globalTotalCases, globalTotalDeaths, globalTotalRecovered, dailyGlobalCases, dailyGlobalDeaths, dailyGlobalRecovered);
 
